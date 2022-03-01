@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript: Functions</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*
+         La idea de esta secciín es qe pruebes de una manera sencillas
+         las diferentes formas de definir funciones
+         y ejecutarlas.
+        */
+        // Aquí se define
+        function sayHello (){
+            console.log("Hello World!")
+        }
+        // Aquí se ejecuta
+        sayHello()
+        function suma() {
+           console.log(2 + 2)
+        }
+        suma()
+        /*
+        // con una variable global
+        const mensaje = 'Hello World'
+        function sayHello(){
+            console.log(mensaje)
+        }
+        sayHello()
+        */
+        /* En cambio si es una variable local
+
+        function sayHello(){
+            const mensaje = 'Hello World'
+            console.log(mensaje)
+        }
+        console.log(mensaje)
+        sayHello()
+
+        // No puede acceder a la variable local ya que se ha quedado
+        // dentro de la función
+        */
+        
+        //Tambien es posible definiendo la variable sin darle valores
+        // es decir, undefined y luego darle valor en la función
+        var mensaje
+        function sayHello(){
+            mensaje = 'Hola mundo'
+            console.log(mensaje)
+        }
+        sayHello()
+
+        // Funciones a las que les pasamos parámetros
+        /*
+        function suma(a,b){
+            console.log(a + b)
+        }
+        suma(2,5)
+        suma(10,5)
+        suma(10,40)
+        suma(200,300)
+
+        function diHola(name = ' World'){
+            console.log('Hello' + name)
+        }
+        diHola()
+        diHola(' Andrés')
+        */
+
+        // Funciones con retorno
+
+        function sayHello(name = 'World'){
+            return `Hello ${name}`;
+        }
+
+        console.log(sayHello())
+        console.log(sayHello('Andrés'))
+
+    </script>
+</body>
+</html>
