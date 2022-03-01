@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="block-text"></p>
+    <script>
+        /*
+        - Mostrar una información al usuario dependiendo de si está conectado o no.
+
+        - Mensaje si no está conectado: Debes registrarte para ver el artículo.
+
+        - Mensaje si estás conectado: Haz click aquí para ver el contenido.
+        
+        */
+
+        const USER_LOGGED = true;
+        // const USER_LOGGED = false;
+        const BLOCK_TEXT = document.querySelector('.block-text')
+
+        if (USER_LOGGED) {
+            BLOCK_TEXT.innerHTML = 'Haz click aquí para ver el contenido.'
+        } else {
+            BLOCK_TEXT.innerHTML = 'Debes registrarte para ver el artículo.'
+        }
+
+
+    </script>
+</body>
+</html>
