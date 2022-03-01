@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="newsletter-text">...</p>
+    <script>
+
+        // Te han pedido que incluyas en el texto de la próxima newsletter 
+        // unas variables dinámicas que te vienen del usuario
+        // ● Nombre: Cristina
+        // ● Videojuego: Link awakening
+        // ● Descuento: 20%
+
+        const NAME_USER = 'Cristina';
+        const NAME_GAME = 'Awakening';
+        const DISCOUNT = 20;
+        const NEWSLETTER = `Hola ${NAME_USER}, como regalo de bienvenida al club de gamers , queremos ofrecer un descuento del ${DISCOUNT} en el proximo lanzamiento de tu interés ${NAME_GAME}. Esperemos que lo disfrutes, un saludo, ${NAME_USER}`
+
+        document.querySelector('.newsletter-text').innerHTML = NEWSLETTER
+    </script>
+</body>
+</html>
