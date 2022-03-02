@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicando lógica con Javascript</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*
+        Quiero irme de viaje, ¿tengo suficiente dinero?
+        - Sí, me puedo ir de viaje.
+        - No, tengo que seguir ahorrando.
+        */
+
+        const VUELO = 100;
+        const HOTEL = 50;
+        const TOUR = 30;
+
+        const TOTAL = VUELO + HOTEL + TOUR;
+        const PRESUPUESTO = 300;
+
+        if (PRESUPUESTO > TOTAL) {
+            console.log('Sí, me puedo ir de viaje')
+        } else if(PRESUPUESTO === TOTAL){
+            console.log('Sí, pero vas justo')
+        } else{
+            console.log('No, tengo que seguir ahorrando.')
+        }
+    </script>
+    
+</body>
+</html>
